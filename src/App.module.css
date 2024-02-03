@@ -1,0 +1,44 @@
+.title {
+  text-align: center;
+  width: 100%;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--alt-background-color-darken);
+}
+
+.formSearch {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: var(--max-width);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.inputSearch {
+  flex-grow: 1;
+  margin: var(--gap) var(--gap-half);
+  padding: var(--gap-half);
+  max-width: calc(var(--max-width) / 3);
+  background-color: var(--background-color-lighten);
+  color: inherit;
+  border: var(--bordered) var(--border-color);
+}
+
+.formActions {
+  flex-grow: 1;
+  display: flex;
+  gap: var(--gap-half);
+  margin: 0 var(--gap-half) var(--gap);
+  max-width: calc(var(--max-width) / 3);
+
+  @media screen and (min-width: 453px) {
+    max-width: calc(var(--max-width) / 6);
+    margin-top: var(--gap);
+  }
+}

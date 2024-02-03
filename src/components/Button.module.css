@@ -1,0 +1,27 @@
+.button {
+  flex-grow: 1;
+  padding: var(--gap-half) var(--gap);
+  background-color: var(--alt-background-color);
+}
+
+.button:hover {
+  background-color: var(--alt-background-color-lighten);
+}
+
+.button[type='submit'] {
+  color: inherit;
+  font-weight: var(--font-weight-700);
+  background-color: var(--main-color-darken);
+}
+
+.button[type='submit']:hover {
+  background-color: var(--main-color);
+}
+
+.button[type='reset'] {
+  background-color: var(--alt-background-color);
+}
+
+.button[type='reset']:hover {
+  background-color: var(--alt-background-color-lighten);
+}
