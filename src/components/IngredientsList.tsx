@@ -6,6 +6,7 @@ interface Props {
 }
 
 const IngredientsList = ({ ingredients }: Props) => {
+  console.log(ingredients)
   return (
     <table className={styles.table}>
       <thead className={styles.thead}>
@@ -22,9 +23,14 @@ const IngredientsList = ({ ingredients }: Props) => {
       </thead>
       <tbody>
         {
-          ingredients.map((ingredient) => {
-            const id = ingredient.name.toLowerCase().replace(' ', '-')
-            return (
+          ingredients.length > 0
+            ? ingredients.map((ingredient) => {
+              const id = ingredient.name.toLowerCase()
+                .normalize('NFD')
+                .replace(/[\u0301]/g, '')
+                .replace(/ /g, '-')
+
+              return (
               <tr className={styles.tr} key={id}>
                 <td data-added={ingredient.addedBy} className={`${styles.td} ${styles.name}`}>{ingredient.name}</td>
                 <td className={styles.td}>{ingredient.effects.first}</td>
@@ -35,8 +41,9 @@ const IngredientsList = ({ ingredients }: Props) => {
                 <td className={styles.td}>{ingredient.price}</td>
                 <td className={styles.td}>{ingredient.description}</td>
               </tr>
-            )
-          })
+              )
+            })
+            : <tr><td className={styles.empty} colSpan={8}>No hay coincidencias</td></tr>
         }
       </tbody>
     </table>

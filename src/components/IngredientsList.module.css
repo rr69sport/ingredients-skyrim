@@ -54,6 +54,14 @@
   transform-origin: 100% 100%;
 }
 
+.empty {
+  text-align: center;
+  padding: var(--gap);
+  font-weight: var(--font-weight-700);
+  text-transform: uppercase;
+  font-size: var(--font-size-lg);
+}
+
 /* .pointer {
   cursor: pointer;
 } */

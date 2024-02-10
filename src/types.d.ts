@@ -15,7 +15,7 @@ export interface IngredientType {
   weight: string
   price: string
   description: string
-  addedBy: string
+  addedBy: 'Skyrim' | 'Dawnguard' | 'Dragonborn'
 }
 
 export interface SortIngredientsByType {

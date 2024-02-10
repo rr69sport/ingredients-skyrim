@@ -1,4 +1,6 @@
-export const dlcDawnguardIngredients = [
+import { type IngredientType } from '../types'
+
+export const dlcDawnguardIngredients: IngredientType[] = [
   {
     name: 'Ala de polilla ancestral',
     effects: {

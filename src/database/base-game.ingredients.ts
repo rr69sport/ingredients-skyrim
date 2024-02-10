@@ -1,4 +1,6 @@
-export const baseGameIngredients = [
+import { type IngredientType } from '../types'
+
+export const baseGameIngredients: IngredientType[] = [
   {
     name: 'Aleta larga abacea',
     effects: {

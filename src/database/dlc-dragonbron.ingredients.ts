@@ -1,4 +1,6 @@
-export const dlcDragonbornIngredients = [
+import { type IngredientType } from '../types'
+
+export const dlcDragonbornIngredients: IngredientType[] = [
   {
     name: 'Ceniza de engendro',
     effects: {
