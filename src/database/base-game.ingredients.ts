@@ -1,4 +1,4 @@
-const ingredientsList = [
+export const baseGameIngredients = [
   {
     name: 'Aleta larga abacea',
     effects: {
@@ -9,7 +9,8 @@ const ingredientsList = [
     },
     weight: '0.5',
     price: '15',
-    description: 'Ríos, Arroyos, Barriles de Pescado'
+    description: 'Ríos, Arroyos, Barriles de Pescado',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Garras de Oso',
@@ -21,7 +22,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '2',
-    description: 'Oso de Cueva, Oso Polar'
+    description: 'Oso de Cueva, Oso Polar',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Abeja',
@@ -33,7 +35,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '3',
-    description: 'Colmena'
+    description: 'Colmena',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Envoltorio de Colmena',
@@ -45,7 +48,8 @@ const ingredientsList = [
     },
     weight: '1',
     price: '5',
-    description: 'Colmena'
+    description: 'Colmena',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Cenizas de Berit (Idéntico a Polvo de Hueso)',
@@ -57,7 +61,8 @@ const ingredientsList = [
     },
     weight: '0.5',
     price: '5',
-    description: 'Objeto de Misión dado por Thadgeir'
+    description: 'Objeto de Misión dado por Thadgeir',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Corona sangrante',
@@ -69,7 +74,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '10',
-    description: 'Racimos de Hongos'
+    description: 'Racimos de Hongos',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Ranúnculo Encorvado',
@@ -81,7 +87,8 @@ const ingredientsList = [
     },
     weight: '0.2',
     price: '12',
-    description: 'Cuevas y áreas oscuras'
+    description: 'Cuevas y áreas oscuras',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Ala de Mariposa Azul',
@@ -93,7 +100,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '2',
-    description: 'Mariposa Azul'
+    description: 'Mariposa Azul',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Ala de Dardo Azul',
@@ -105,7 +113,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '1',
-    description: 'Volando sobre el agua'
+    description: 'Volando sobre el agua',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Flor azul de montaña',
@@ -117,7 +126,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '2',
-    description: 'Matas de Flores de Montaña'
+    description: 'Matas de Flores de Montaña',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Polvo de huesos',
@@ -129,7 +139,8 @@ const ingredientsList = [
     },
     weight: '0.5',
     price: '5',
-    description: 'Esqueletos'
+    description: 'Esqueletos',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Corazón de Espino',
@@ -141,7 +152,8 @@ const ingredientsList = [
     },
     weight: '0.5',
     price: '20',
-    description: 'Lideres Renegados'
+    description: 'Lideres Renegados',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Ala de mariposa',
@@ -153,7 +165,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '3',
-    description: 'Mariposa monarca'
+    description: 'Mariposa monarca',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Raíz canina',
@@ -165,7 +178,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '5',
-    description: 'Cerca de áreas rocosas'
+    description: 'Cerca de áreas rocosas',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Piel Chamuscada de Skeever',
@@ -177,7 +191,8 @@ const ingredientsList = [
     },
     weight: '0.5',
     price: '1',
-    description: 'Encontrado cocinando en hogueras'
+    description: 'Encontrado cocinando en hogueras',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Huevos de Cauro',
@@ -189,7 +204,8 @@ const ingredientsList = [
     },
     weight: '0.2',
     price: '10',
-    description: 'Cuevas de los Falmer'
+    description: 'Cuevas de los Falmer',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Huevo de Gallina',
@@ -201,7 +217,8 @@ const ingredientsList = [
     },
     weight: '0.5',
     price: '2',
-    description: 'Nido de Gallina'
+    description: 'Nido de Gallina',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Raíz trepadora',
@@ -213,7 +230,8 @@ const ingredientsList = [
     },
     weight: '0.2',
     price: '1',
-    description: 'Cráteres Volcánicos'
+    description: 'Cráteres Volcánicos',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Raíz de nirn carmesí',
@@ -225,7 +243,8 @@ const ingredientsList = [
     },
     weight: '0.2',
     price: '10',
-    description: 'Límite Sombrío'
+    description: 'Límite Sombrío',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Cola de Espada Cyrodílica',
@@ -237,7 +256,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '15',
-    description: 'Ríos, Arroyos'
+    description: 'Ríos, Arroyos',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Corazón de daedra',
@@ -249,7 +269,8 @@ const ingredientsList = [
     },
     weight: '0.5',
     price: '250',
-    description: 'Daedra'
+    description: 'Daedra',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Campanilla de la muerte',
@@ -261,7 +282,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '4',
-    description: 'Salvaje, en parterres'
+    description: 'Salvaje, en parterres',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Lengua de Dragón',
@@ -273,7 +295,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '5',
-    description: 'Planta con flores similares al namee'
+    description: 'Planta con flores similares al namee',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Aceite enano',
@@ -285,7 +308,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '15',
-    description: 'Ruinas Dwemer'
+    description: 'Ruinas Dwemer',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Ectoplasma',
@@ -297,7 +321,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '25',
-    description: 'Criaturas fantasmales'
+    description: 'Criaturas fantasmales',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Oreja de Elfo',
@@ -309,7 +334,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '10',
-    description: 'Planta colgante'
+    description: 'Planta colgante',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Ojo de Gato Sable',
@@ -321,7 +347,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '2',
-    description: 'Gato Sable, Gato Sable de las Nieves'
+    description: 'Gato Sable, Gato Sable de las Nieves',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Oreja de Falmer',
@@ -333,7 +360,8 @@ const ingredientsList = [
     },
     weight: '0.2',
     price: '10',
-    description: 'Falmer'
+    description: 'Falmer',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Sales de Fuego',
@@ -345,7 +373,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '50',
-    description: 'Atronach de las llamas'
+    description: 'Atronach de las llamas',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Amanita Muscaria',
@@ -357,7 +386,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '2',
-    description: 'Crecimientos fúngicos y alrededor de cuevas.'
+    description: 'Crecimientos fúngicos y alrededor de cuevas.',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Mirriam de escarcha',
@@ -369,7 +399,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '1',
-    description: 'Colgado en casas y negocios'
+    description: 'Colgado en casas y negocios',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Sales de escarcha',
@@ -381,7 +412,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '100',
-    description: 'Atronach de la escarcha'
+    description: 'Atronach de la escarcha',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Ajo',
@@ -393,7 +425,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '1',
-    description: 'Crece en granjas y salvaje, colgado en interiores'
+    description: 'Crece en granjas y salvaje, colgado en interiores',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Liquen Gigante',
@@ -405,7 +438,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '5',
-    description: 'Pantanos'
+    description: 'Pantanos',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Dedo del gigante',
@@ -417,7 +451,8 @@ const ingredientsList = [
     },
     weight: '1',
     price: '20',
-    description: 'Gigantes'
+    description: 'Gigantes',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Polvo Brillante',
@@ -429,7 +464,8 @@ const ingredientsList = [
     },
     weight: '0.5',
     price: '20',
-    description: 'Wispmother'
+    description: 'Wispmother',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Seta Brillante',
@@ -441,7 +477,8 @@ const ingredientsList = [
     },
     weight: '0.2',
     price: '5',
-    description: 'Paredes de cuevas'
+    description: 'Paredes de cuevas',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Semilla de hierba',
@@ -453,7 +490,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '1',
-    description: 'Tundra'
+    description: 'Tundra',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Garra de Bruja Cuervo',
@@ -465,7 +503,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '20',
-    description: 'Bruja Cuervo'
+    description: 'Bruja Cuervo',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Plumas de bruja cuervo',
@@ -477,7 +516,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '20',
-    description: 'Bruja Cuervo'
+    description: 'Bruja Cuervo',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Musgo Colgante',
@@ -489,7 +529,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '1',
-    description: 'Areas boscosas, en ruinas'
+    description: 'Areas boscosas, en ruinas',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Pico de Halcón',
@@ -501,7 +542,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '15',
-    description: 'Halcón'
+    description: 'Halcón',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Pluma de Halcón',
@@ -513,7 +555,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '15',
-    description: 'Halcón'
+    description: 'Halcón',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Carpa de hist',
@@ -525,7 +568,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '6',
-    description: 'Ríos y arroyos'
+    description: 'Ríos y arroyos',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Panal',
@@ -537,7 +581,8 @@ const ingredientsList = [
     },
     weight: '1',
     price: '5',
-    description: 'Colmena'
+    description: 'Colmena',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Carne humana',
@@ -549,7 +594,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '1',
-    description: 'Falmer'
+    description: 'Falmer',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Corazón humano',
@@ -561,7 +607,8 @@ const ingredientsList = [
     },
     weight: '1',
     price: '0',
-    description: 'Falmer'
+    description: 'Falmer',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Dientes de Espectro del Hielo',
@@ -573,7 +620,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '30',
-    description: 'Espectro de Hielo'
+    description: 'Espectro de Hielo',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Heces de diablillo',
@@ -585,7 +633,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '0',
-    description: 'Crecimientos fungicos dentro y alrededor de cuevas y mazmorras'
+    description: 'Crecimientos fungicos dentro y alrededor de cuevas y mazmorras',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Raíz de Jarrin',
@@ -597,7 +646,8 @@ const ingredientsList = [
     },
     weight: '0.5',
     price: '10',
-    description: 'Misión de la Hermandad Oscura'
+    description: 'Misión de la Hermandad Oscura',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Uvas de jazbay',
@@ -609,7 +659,8 @@ const ingredientsList = [
     },
     weight: '0.2',
     price: '1',
-    description: 'Cráteres Volcánicos'
+    description: 'Cráteres Volcánicos',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Frutos de enebro',
@@ -621,7 +672,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '1',
-    description: 'Arboles de Enebro'
+    description: 'Arboles de Enebro',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Cornamenta Grande',
@@ -633,7 +685,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '2',
-    description: 'Ciervo, Alce'
+    description: 'Ciervo, Alce',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Lavanda',
@@ -645,7 +698,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '1',
-    description: 'Matorrales al aire libre'
+    description: 'Matorrales al aire libre',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Ala de Actias Luna',
@@ -657,7 +711,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '5',
-    description: 'Actias Luna'
+    description: 'Actias Luna',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Azúcar Lunar',
@@ -669,7 +724,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '50',
-    description: 'Caravanas Khajitas'
+    description: 'Caravanas Khajitas',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Mora Tapinella',
@@ -681,7 +737,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '4',
-    description: 'Arboles muertos'
+    description: 'Arboles muertos',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Quitina de cangrejo del barro',
@@ -693,7 +750,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '2',
-    description: 'Cangrejo de barro'
+    description: 'Cangrejo de barro',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Putrefacción de Namira',
@@ -705,7 +763,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '0',
-    description: 'Cuevas'
+    description: 'Cuevas',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Belladama',
@@ -717,7 +776,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '8',
-    description: 'Cementerios, áreas de no muertos'
+    description: 'Cementerios, áreas de no muertos',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Raíz de Nirn',
@@ -729,7 +789,8 @@ const ingredientsList = [
     },
     weight: '0.2',
     price: '10',
-    description: 'Cerca de agua'
+    description: 'Cerca de agua',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Percebe Nórdico',
@@ -741,7 +802,8 @@ const ingredientsList = [
     },
     weight: '0.2',
     price: '5',
-    description: 'Bajo el agua, o en rocas al lado del mar'
+    description: 'Bajo el agua, o en rocas al lado del mar',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Ala de dardo naranja',
@@ -753,7 +815,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '1',
-    description: 'Volando sobre el agua'
+    description: 'Volando sobre el agua',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Perla',
@@ -765,7 +828,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '2',
-    description: 'Almejas'
+    description: 'Almejas',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Huevo de zorzal',
@@ -777,7 +841,8 @@ const ingredientsList = [
     },
     weight: '0.5',
     price: '2',
-    description: 'Nidos en los bosques'
+    description: 'Nidos en los bosques',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Colmillo de mamut molido',
@@ -789,7 +854,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '2',
-    description: 'Campamentos de gigantes'
+    description: 'Campamentos de gigantes',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Flor púrpura de montaña',
@@ -801,7 +867,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '2',
-    description: 'Matojos de Flores de Montaña'
+    description: 'Matojos de Flores de Montaña',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Flor roja de montaña',
@@ -813,7 +880,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '2',
-    description: 'Matojos de Flores de Montaña'
+    description: 'Matojos de Flores de Montaña',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Betty de río',
@@ -825,7 +893,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '15',
-    description: 'Ríos y arroyos'
+    description: 'Ríos y arroyos',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Huevo de acantiza minero',
@@ -837,7 +906,8 @@ const ingredientsList = [
     },
     weight: '0.5',
     price: '2',
-    description: 'Rock Warbler Nest'
+    description: 'Rock Warbler Nest',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Diente de Gato Sable',
@@ -849,7 +919,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '2',
-    description: 'Gato Sable, Gato Sable de las Nieves'
+    description: 'Gato Sable, Gato Sable de las Nieves',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Montón de Sal',
@@ -861,7 +932,8 @@ const ingredientsList = [
     },
     weight: '0.2',
     price: '2',
-    description: 'Mercaderes, contenedores, cerca de lugares de cocina'
+    description: 'Mercaderes, contenedores, cerca de lugares de cocina',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Foliota escamosa',
@@ -873,7 +945,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '4',
-    description: 'Abedules muertos'
+    description: 'Abedules muertos',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Perca de Lomo Plateado',
@@ -885,7 +958,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '15',
-    description: 'Ríos, arroyos'
+    description: 'Ríos, arroyos',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Cola de Skeever',
@@ -897,7 +971,8 @@ const ingredientsList = [
     },
     weight: '0.2',
     price: '3',
-    description: 'Skeever'
+    description: 'Skeever',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Huevo de Pez Asesino',
@@ -909,7 +984,8 @@ const ingredientsList = [
     },
     weight: '0.2',
     price: '3',
-    description: 'Bajo el agua'
+    description: 'Bajo el agua',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Escamas de Pez Asesino',
@@ -921,7 +997,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '3',
-    description: 'Pez Asesino'
+    description: 'Pez Asesino',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Cornamenta Pequeña',
@@ -933,7 +1010,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '2',
-    description: 'Alce'
+    description: 'Alce',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Perla Pequeña',
@@ -945,7 +1023,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '2',
-    description: 'Almejas'
+    description: 'Almejas',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Sinforicarpos',
@@ -957,7 +1036,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '4',
-    description: 'Arbusto Sinforicarpo'
+    description: 'Arbusto Sinforicarpo',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Huevo de araña',
@@ -969,7 +1049,8 @@ const ingredientsList = [
     },
     weight: '0.2',
     price: '5',
-    description: 'Nidos de Arañas'
+    description: 'Nidos de Arañas',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Savia de Spriggan',
@@ -981,7 +1062,8 @@ const ingredientsList = [
     },
     weight: '0.2',
     price: '5',
-    description: 'Spriggan'
+    description: 'Spriggan',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Vaina Fúngica del Pantano',
@@ -993,7 +1075,8 @@ const ingredientsList = [
     },
     weight: '0.5',
     price: '3',
-    description: 'Pantanos'
+    description: 'Pantanos',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Raíz nudosa',
@@ -1005,7 +1088,8 @@ const ingredientsList = [
     },
     weight: '0.5',
     price: '15',
-    description: 'Spriggan'
+    description: 'Spriggan',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Ramita de Cardo',
@@ -1017,7 +1101,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '1',
-    description: 'Planta de Cardo'
+    description: 'Planta de Cardo',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Tórax de Luciérnaga',
@@ -1029,7 +1114,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '1',
-    description: 'Luciérnagas (por la noche)'
+    description: 'Luciérnagas (por la noche)',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Grasa de trol',
@@ -1041,7 +1127,8 @@ const ingredientsList = [
     },
     weight: '1',
     price: '15',
-    description: 'Trol, Trol de la escarcha'
+    description: 'Trol, Trol de la escarcha',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Cardo Lanudo',
@@ -1053,7 +1140,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '1',
-    description: 'Montañas altas, bajo el nivel de nieve'
+    description: 'Montañas altas, bajo el nivel de nieve',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Polvo de Vampiro',
@@ -1065,7 +1153,8 @@ const ingredientsList = [
     },
     weight: '0.2',
     price: '25',
-    description: 'Vampiro, La Mano de Plata'
+    description: 'Vampiro, La Mano de Plata',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Sales de Vacio',
@@ -1077,7 +1166,8 @@ const ingredientsList = [
     },
     weight: '0.2',
     price: '125',
-    description: 'Atronach de la tormenta'
+    description: 'Atronach de la tormenta',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Trigo',
@@ -1089,7 +1179,8 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '5',
-    description: 'Granjas, contenedores'
+    description: 'Granjas, contenedores',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Champiñón',
@@ -1101,7 +1192,8 @@ const ingredientsList = [
     },
     weight: '0.3',
     price: '0',
-    description: 'Crecimientos fungicos en cuevas y sus entradas'
+    description: 'Crecimientos fúngicos en cuevas y sus entradas',
+    addedBy: 'Skyrim'
   },
   {
     name: 'Enseres de fuego fatuo',
@@ -1113,8 +1205,7 @@ const ingredientsList = [
     },
     weight: '0.1',
     price: '2',
-    description: 'Madre Fatua'
+    description: 'Madre Fatua',
+    addedBy: 'Skyrim'
   }
 ]
-
-export default ingredientsList

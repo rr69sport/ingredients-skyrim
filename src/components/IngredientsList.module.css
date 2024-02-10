@@ -1,4 +1,5 @@
 .table {
+  width: 100%;
   margin-top: var(--gap);
   margin-bottom: calc(var(--gap) * 8);
   border-collapse: collapse;
@@ -35,8 +36,22 @@
 }
 
 .name {
+  position: relative;
   font-weight: var(--font-weight-700);
   background-color: var(--alt-background-color-darken);
+}
+
+.name::before {
+  content: attr(data-added);
+  padding: 2px 4px;
+  border-top-left-radius: var(--border-radius);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: var(--main-color);
+  font-size: var(--font-size-small);
+  transform: scale(.80);
+  transform-origin: 100% 100%;
 }
 
 /* .pointer {

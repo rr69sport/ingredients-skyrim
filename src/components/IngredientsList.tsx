@@ -26,11 +26,11 @@ const IngredientsList = ({ ingredients }: Props) => {
             const id = ingredient.name.toLowerCase().replace(' ', '-')
             return (
               <tr className={styles.tr} key={id}>
-                <td className={`${styles.td} ${styles.name}`}>{ingredient.name}</td>
-                <td onClick={() => { }} className={`${styles.td} ${styles.pointer}`}>{ingredient.effects.first}</td>
-                <td onClick={() => { }} className={`${styles.td} ${styles.pointer}`}>{ingredient.effects.second}</td>
-                <td onClick={() => { }} className={`${styles.td} ${styles.pointer}`}>{ingredient.effects.third}</td>
-                <td onClick={() => { }} className={`${styles.td} ${styles.pointer}`}>{ingredient.effects.fourth}</td>
+                <td data-added={ingredient.addedBy} className={`${styles.td} ${styles.name}`}>{ingredient.name}</td>
+                <td className={styles.td}>{ingredient.effects.first}</td>
+                <td className={styles.td}>{ingredient.effects.second}</td>
+                <td className={styles.td}>{ingredient.effects.third}</td>
+                <td className={styles.td}>{ingredient.effects.fourth}</td>
                 <td className={styles.td}>{ingredient.weight}</td>
                 <td className={styles.td}>{ingredient.price}</td>
                 <td className={styles.td}>{ingredient.description}</td>

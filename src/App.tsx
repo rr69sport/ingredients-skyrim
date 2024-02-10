@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { type IngredientType } from './types'
 import styles from './App.module.css'
-import ingredientsList from './database/ingredients'
+import { allIngredients } from './database/all-ingredients'
 import IngredientsList from './components/IngredientsList'
 // import Button from './components/Button'
 
@@ -13,13 +13,13 @@ const App = () => {
   }
 
   const filteredIngredients: IngredientType[] = filterIngredient !== null && filterIngredient.length > 0
-    ? ingredientsList.filter(ingredient => {
+    ? allIngredients.filter(ingredient => {
       return ingredient.effects.first.toLowerCase().includes(filterIngredient.toLowerCase()) ||
         ingredient.effects.second.toLowerCase().includes(filterIngredient.toLowerCase()) ||
         ingredient.effects.third.toLowerCase().includes(filterIngredient.toLowerCase()) ||
         ingredient.effects.fourth.toLowerCase().includes(filterIngredient.toLowerCase())
     })
-    : ingredientsList
+    : allIngredients
 
   return (
     <>

@@ -15,12 +15,13 @@ export interface IngredientType {
   weight: string
   price: string
   description: string
+  addedBy: string
 }
 
 export interface SortIngredientsByType {
-  ingredient: ({ ingredients }: { ingredients: Ingredient[] }) => Ingredient[]
-  firstEffect: ({ ingredients }: { ingredients: Ingredient[] }) => Ingredient[]
-  secondEffect: ({ ingredients }: { ingredients: Ingredient[] }) => Ingredient[]
-  thirdEffect: ({ ingredients }: { ingredients: Ingredient[] }) => Ingredient[]
-  fourthEffect: ({ ingredients }: { ingredients: Ingredient[] }) => Ingredient[]
+  ingredient: ({ ingredients }: { ingredients: IngredientType[] }) => IngredientType[]
+  firstEffect: ({ ingredients }: { ingredients: IngredientType[] }) => IngredientType[]
+  secondEffect: ({ ingredients }: { ingredients: IngredientType[] }) => IngredientType[]
+  thirdEffect: ({ ingredients }: { ingredients: IngredientType[] }) => IngredientType[]
+  fourthEffect: ({ ingredients }: { ingredients: IngredientType[] }) => IngredientType[]
 }
