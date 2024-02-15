@@ -297,7 +297,7 @@ export const baseGameIngredients: IngredientType[] = [
     },
     weight: '0.1',
     price: '5',
-    description: 'Planta con flores similares al namee',
+    description: 'Planta con flores similares al ingrediente',
     addedBy: 'Skyrim'
   },
   {
