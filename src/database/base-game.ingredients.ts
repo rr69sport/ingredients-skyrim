@@ -466,7 +466,7 @@ export const baseGameIngredients: IngredientType[] = [
     },
     weight: '0.5',
     price: '20',
-    description: 'Wispmother',
+    description: 'Madre Fatua',
     addedBy: 'Skyrim'
   },
   {
