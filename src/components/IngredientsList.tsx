@@ -27,7 +27,7 @@ const IngredientsList = ({ ingredients }: Props) => {
             ? ingredients.map((ingredient) => {
               const id = ingredient.name.toLowerCase()
                 .normalize('NFD')
-                .replace(/[\u0301]/g, '')
+                .replace(/[\u0300-\u036f]/g, '')
                 .replace(/ /g, '-')
 
               return (
