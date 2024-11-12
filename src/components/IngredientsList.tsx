@@ -1,4 +1,5 @@
 import type { IngredientType } from '../types'
+import { normaliceCharacters } from '../utils/normailizeIngredientName'
 import styles from './IngredientsList.module.css'
 
 interface Props {
@@ -24,10 +25,7 @@ const IngredientsList = ({ ingredients }: Props) => {
         {
           ingredients.length > 0
             ? ingredients.map((ingredient) => {
-              const id = ingredient.name.toLowerCase()
-                .normalize('NFD')
-                .replace(/[\u0300-\u036f]/g, '')
-                .replace(/ /g, '-')
+              const id = normaliceCharacters(ingredient.name.toLowerCase())
 
               return (
               <tr className={styles.tr} key={id}>

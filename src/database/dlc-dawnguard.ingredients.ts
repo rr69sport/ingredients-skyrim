@@ -33,7 +33,7 @@ export const dlcDawnguardIngredients: IngredientType[] = [
       first: 'Resistencia a la magia',
       second: 'Miedo',
       third: 'Regenerar salud',
-      fourth: 'Parálisis'
+      fourth: 'Paralizar'
     },
     weight: '0.1',
     price: '5',
