@@ -2,6 +2,7 @@ import { useState } from 'react'
 import styles from './App.module.css'
 import { allIngredients } from './database/all-ingredients'
 import IngredientsList from './components/IngredientsList'
+import { normaliceCharacters } from './utils/normailizeIngredientName'
 
 const App = () => {
   const [filterIngredient, setFilterIngredient] = useState<string | null>(null)
@@ -12,10 +13,10 @@ const App = () => {
 
   const filteredIngredients = filterIngredient !== null && filterIngredient.length > 0
     ? allIngredients.filter(ingredient => {
-      return ingredient.effects.first.toLowerCase().includes(filterIngredient.toLowerCase()) ||
-        ingredient.effects.second.toLowerCase().includes(filterIngredient.toLowerCase()) ||
-        ingredient.effects.third.toLowerCase().includes(filterIngredient.toLowerCase()) ||
-        ingredient.effects.fourth.toLowerCase().includes(filterIngredient.toLowerCase())
+      return normaliceCharacters(ingredient.effects.first).toLowerCase().includes(normaliceCharacters(filterIngredient).toLowerCase()) ||
+        normaliceCharacters(ingredient.effects.second).toLowerCase().includes(normaliceCharacters(filterIngredient).toLowerCase()) ||
+        normaliceCharacters(ingredient.effects.third).toLowerCase().includes(normaliceCharacters(filterIngredient).toLowerCase()) ||
+        normaliceCharacters(ingredient.effects.fourth).toLowerCase().includes(normaliceCharacters(filterIngredient).toLowerCase())
     })
     : allIngredients
 

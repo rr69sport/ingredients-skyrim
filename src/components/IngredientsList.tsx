@@ -6,7 +6,6 @@ interface Props {
 }
 
 const IngredientsList = ({ ingredients }: Props) => {
-  console.log(ingredients)
   return (
     <table className={styles.table}>
       <thead className={styles.thead}>
