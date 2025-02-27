@@ -31,7 +31,6 @@
 }
 
 .formActions {
-  flex-grow: 1;
   display: flex;
   gap: var(--gap-half);
   margin: 0 var(--gap-half) var(--gap);
@@ -41,4 +40,20 @@
     max-width: calc(var(--max-width) / 6);
     margin-top: var(--gap);
   }
+}
+
+.formActionsButton {
+  padding-inline: calc(var(--gap) * 2);
+}
+
+.filters {
+  display: flex;
+  gap: var(--gap);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter {
+  flex: auto;
+  padding: var(--gap) calc(var(--gap) * 2);
 }
