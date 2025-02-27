@@ -1,5 +1,6 @@
+import { useState } from 'react'
 import type { IngredientType } from '../types'
-import { normaliceCharacters } from '../utils/normailizeIngredientName'
+import { normaliceCharacters } from '../utils/normailizeCharacters'
 import styles from './IngredientsList.module.css'
 
 interface Props {
@@ -7,6 +8,8 @@ interface Props {
 }
 
 const IngredientsList = ({ ingredients }: Props) => {
+  const [findEffects, setFindEffects] = useState<IngredientType['effects'] | null>(null)
+  console.log({ findEffects })
   return (
     <table className={styles.table}>
       <thead className={styles.thead}>
@@ -17,7 +20,6 @@ const IngredientsList = ({ ingredients }: Props) => {
           <th className={styles.th}>Tercer Efecto</th>
           <th className={styles.th}>Cuarto Efecto</th>
           <th className={styles.th}>Peso</th>
-          <th className={styles.th}>Valor</th>
           <th className={styles.th}>Fuente</th>
         </tr>
       </thead>
@@ -25,22 +27,23 @@ const IngredientsList = ({ ingredients }: Props) => {
         {
           ingredients.length > 0
             ? ingredients.map((ingredient) => {
-              const id = normaliceCharacters(ingredient.name.toLowerCase())
+              const ingredientId = normaliceCharacters({ string: `${ingredient.name}`, searchValue: / /g, replaceBy: '-' })
 
               return (
-              <tr className={styles.tr} key={id}>
-                <td data-added={ingredient.addedBy} className={`${styles.td} ${styles.name}`}>{ingredient.name}</td>
-                <td className={styles.td}>{ingredient.effects.first}</td>
-                <td className={styles.td}>{ingredient.effects.second}</td>
-                <td className={styles.td}>{ingredient.effects.third}</td>
-                <td className={styles.td}>{ingredient.effects.fourth}</td>
-                <td className={styles.td}>{ingredient.weight}</td>
-                <td className={styles.td}>{ingredient.price}</td>
-                <td className={styles.td}>{ingredient.description}</td>
-              </tr>
+                <tr className={styles.tr} key={ingredientId}>
+                  <td onClick={() => { setFindEffects(ingredient.effects) }} data-added={ingredient.addedBy} className={`${styles.td} ${styles.name}`}>{ingredient.name}</td>
+                  {
+                    ingredient.effects.map(effect => {
+                      const effectId = normaliceCharacters({ string: `${ingredientId}-${effect}`, searchValue: / /g, replaceBy: '-' })
+                      return <td key={effectId} className={styles.td}>{effect}</td>
+                    })
+                  }
+                  <td className={styles.td}>{ingredient.weight}</td>
+                  <td className={styles.td}>{ingredient.description}</td>
+                </tr>
               )
             })
-            : <tr><td className={styles.empty} colSpan={8}>No hay coincidencias</td></tr>
+            : <tr><td className={styles.empty} colSpan={7}>No hay coincidencias</td></tr>
         }
       </tbody>
     </table>
