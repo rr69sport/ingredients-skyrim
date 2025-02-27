@@ -6,22 +6,8 @@ declare global {
 
 export interface IngredientType {
   name: string
-  effects: {
-    first: string
-    second: string
-    third: string
-    fourth: string
-  }
+  effects: [string, string, string, string]
   weight: string
-  price: string
   description: string
   addedBy: 'Skyrim' | 'Dawnguard' | 'Dragonborn'
-}
-
-export interface SortIngredientsByType {
-  ingredient: ({ ingredients }: { ingredients: IngredientType[] }) => IngredientType[]
-  firstEffect: ({ ingredients }: { ingredients: IngredientType[] }) => IngredientType[]
-  secondEffect: ({ ingredients }: { ingredients: IngredientType[] }) => IngredientType[]
-  thirdEffect: ({ ingredients }: { ingredients: IngredientType[] }) => IngredientType[]
-  fourthEffect: ({ ingredients }: { ingredients: IngredientType[] }) => IngredientType[]
 }
