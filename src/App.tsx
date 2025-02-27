@@ -1,8 +1,8 @@
-import { useState } from 'react'
 import styles from './App.module.css'
+import { useState } from 'react'
 import { allIngredients } from './database/all-ingredients'
 import IngredientsList from './components/IngredientsList'
-import { normaliceCharacters } from './utils/normailizeIngredientName'
+import { normaliceCharacters } from './utils/normailizeCharacters'
 
 const App = () => {
   const [filterIngredient, setFilterIngredient] = useState<string | null>(null)
@@ -13,10 +13,7 @@ const App = () => {
 
   const filteredIngredients = filterIngredient !== null && filterIngredient.length > 0
     ? allIngredients.filter(ingredient => {
-      return normaliceCharacters(ingredient.effects.first).toLowerCase().includes(normaliceCharacters(filterIngredient).toLowerCase()) ||
-        normaliceCharacters(ingredient.effects.second).toLowerCase().includes(normaliceCharacters(filterIngredient).toLowerCase()) ||
-        normaliceCharacters(ingredient.effects.third).toLowerCase().includes(normaliceCharacters(filterIngredient).toLowerCase()) ||
-        normaliceCharacters(ingredient.effects.fourth).toLowerCase().includes(normaliceCharacters(filterIngredient).toLowerCase())
+      return ingredient.effects.find(effect => normaliceCharacters({ string: effect }).includes(normaliceCharacters({ string: filterIngredient })))
     })
     : allIngredients
 
@@ -24,6 +21,13 @@ const App = () => {
     <>
       <header>
         <h1 className={styles.title}>Ingredients Skyrim</h1>
+
+        <div className={styles.filters}>
+          <button className={styles.filter}>Todos los ingredientes</button>
+          <button className={styles.filter}>Solo ingredientes de Skyrim</button>
+          <button className={styles.filter}>Solo ingredientes de Dawnguard</button>
+          <button className={styles.filter}>Solo ingredientes de Dragonbron</button>
+        </div>
       </header>
 
       <IngredientsList ingredients={filteredIngredients} />
@@ -37,7 +41,7 @@ const App = () => {
             placeholder='Ej: restaurar salud' />
 
           <div className={styles.formActions}>
-            <button type='reset' onClick={handleReset}>Restaurar</button>
+            <button className={styles.formActionsButton} type='reset' onClick={handleReset}>Borrar filtro</button>
           </div>
         </form>
       </footer>
