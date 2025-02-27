@@ -39,6 +39,7 @@
   position: relative;
   font-weight: var(--font-weight-700);
   background-color: var(--alt-background-color-darken);
+  cursor: pointer;
 }
 
 .name::before {
@@ -46,8 +47,8 @@
   padding: 2px 4px;
   border-top-left-radius: var(--border-radius);
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 1px;
+  bottom: 1px;
   background-color: var(--main-color);
   font-size: var(--font-size-small);
   transform: scale(.80);
