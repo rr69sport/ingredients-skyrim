@@ -2,9 +2,9 @@
 
 /* Border Colors */
 :root {
-  --border-color-light-theme: #a6a6a6;
+  --border-color-light-theme: #a6a6a640;
   --border-color-light-theme-with-alpha: rgba(166, 166, 166, 0.25);
-  --border-color-dark-theme: #404040;
+  --border-color-dark-theme: #40404040;
   --border-color-dark-theme-with-alpha: rgba(64, 64, 64, 0.25);
 }
 
@@ -161,10 +161,11 @@ html {
 body {
   margin: 0 auto;
   max-width: var(--max-width);
-  color: var(--foreground-color);
-  background-color: var(--background-color);
+
   font-family: system-ui, sans-serif;
   font-size: var(--font-size-base);
+  color: var(--foreground-color);
+  background-color: var(--background-color);
 }
 
 img {
@@ -175,20 +176,14 @@ img {
 
 input,
 button {
-  border: none;
   display: block;
-  font-size: inherit;
-  color: var(--foreground-color);
-  border-radius: var(--border-radius);
-}
 
-button {
-  cursor: pointer;
-  background-color: var(--alt-background-color);
+  border: none;
+  font-size: inherit;
 }
 
 button:hover {
-  background-color: var(--alt-background-color-lighten);
+  cursor: pointer;
 }
 
 h1,

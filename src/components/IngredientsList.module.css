@@ -1,16 +1,21 @@
 .table {
   width: 100%;
   margin-top: var(--gap);
-  margin-bottom: calc(var(--gap) * 8);
-  border-collapse: collapse;
+  margin-bottom: var(--gap);
+
   background-color: var(--alt-background-color);
+  border-radius: var(--border-radius);
+  border-collapse: collapse;
+  overflow: hidden;
 }
 
 .thead {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: var(--background-color-darken);
+  background-color: var(--alt-background-color-darken);
+  border: var(--bordered) var(--alt-background-color-darken);
+}
+
+.tbody {
+  overflow: hidden;
 }
 
 .tr {
@@ -21,52 +26,50 @@
   background-color: var(--background-color-lighten);
 }
 
-
 .th,
 .td {
-  padding: var(--gap-half);
-}
-
-.th {
   padding: var(--gap);
 }
 
-.td {
-  border: var(--bordered) var(--border-color);
+.td:not(:last-child),
+.th:not(:last-child) {
+  border-right: var(--bordered) var(--border-color);
+}
+
+.tr:not(:last-child) .td:first-child {
+  border-top: var(--bordered) var(--border-color);
+  border-bottom: var(--bordered) var(--border-color);
 }
 
 .name {
   position: relative;
   font-weight: var(--font-weight-700);
   background-color: var(--alt-background-color-darken);
+  border: var(--bordered) var(--alt-background-color-darken);
   cursor: pointer;
+
 }
 
 .name::before {
   content: attr(data-added);
-  padding: 2px 4px;
-  border-top-left-radius: var(--border-radius);
   position: absolute;
   right: 1px;
   bottom: 1px;
-  background-color: var(--main-color);
+  padding: 2px 4px;
+
   font-size: var(--font-size-small);
+  background-color: var(--main-color);
+
   transform: scale(.80);
   transform-origin: 100% 100%;
+  border-top-left-radius: var(--border-radius);
 }
 
 .empty {
-  text-align: center;
   padding: var(--gap);
+
   font-weight: var(--font-weight-700);
-  text-transform: uppercase;
   font-size: var(--font-size-lg);
+  text-align: center;
+  text-transform: uppercase;
 }
-
-/* .pointer {
-  cursor: pointer;
-} */
-
-/* .pointer:hover {
-  color: var(--main-color);
-} */

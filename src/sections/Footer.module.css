@@ -1,0 +1,4 @@
+.footer {
+  padding: var(--gap);
+  background-color: var(--alt-background-color);
+}

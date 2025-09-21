@@ -1,0 +1,32 @@
+.h2 {
+  text-align: center;
+}
+
+.ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--gap);
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.anchor {
+  display: inline-block;
+  padding: var(--gap);
+
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+
+  &:hover {
+    text-decoration: underline;
+    background-color: var(--background-color-lighten);
+  }
+}

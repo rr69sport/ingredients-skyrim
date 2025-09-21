@@ -1,10 +1,12 @@
 const isString = (string: any) => typeof string === 'string' || string instanceof String
 
 /**
- * ```
- * string: "Some text",
- * searchValue: /[\u0300-\u036f]/g, // default
- * replaceBy: '' // default
+ * ```js
+ * const options = {
+ *   string: "Some text",
+ *   searchValue: /[\u0300-\u036f]/g, // default
+ *   replaceBy: '' // default
+ * }
  * ```
  */
 export const normaliceCharacters = ({ string, searchValue = /[\u0300-\u036f]/g, replaceBy = '' }: {

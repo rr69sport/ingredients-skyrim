@@ -1,15 +1,15 @@
-import { useState } from 'react'
 import type { IngredientType } from '../types'
+
+import { useFilters } from '../hooks/useFilters'
 import { normaliceCharacters } from '../utils/normailizeCharacters'
+import { allIngredients } from '../database/all-ingredients'
 import styles from './IngredientsList.module.css'
 
-interface Props {
-  ingredients: IngredientType[]
-}
+const IngredientsList = () => {
+  const { filterIngredients } = useFilters()
 
-const IngredientsList = ({ ingredients }: Props) => {
-  const [findEffects, setFindEffects] = useState<IngredientType['effects'] | null>(null)
-  console.log({ findEffects })
+  const filteredIngredients: IngredientType[] = filterIngredients(allIngredients)
+
   return (
     <table className={styles.table}>
       <thead className={styles.thead}>
@@ -23,15 +23,15 @@ const IngredientsList = ({ ingredients }: Props) => {
           <th className={styles.th}>Fuente</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody className={styles.tbody}>
         {
-          ingredients.length > 0
-            ? ingredients.map((ingredient) => {
+          filteredIngredients.length > 0
+            ? filteredIngredients.map((ingredient) => {
               const ingredientId = normaliceCharacters({ string: `${ingredient.name}`, searchValue: / /g, replaceBy: '-' })
 
               return (
                 <tr className={styles.tr} key={ingredientId}>
-                  <td onClick={() => { setFindEffects(ingredient.effects) }} data-added={ingredient.addedBy} className={`${styles.td} ${styles.name}`}>{ingredient.name}</td>
+                  <td data-added={ingredient.addedBy} className={`${styles.td} ${styles.name}`}>{ingredient.name}</td>
                   {
                     ingredient.effects.map(effect => {
                       const effectId = normaliceCharacters({ string: `${ingredientId}-${effect}`, searchValue: / /g, replaceBy: '-' })
