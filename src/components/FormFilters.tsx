@@ -40,7 +40,7 @@ const FormFilters = () => {
       </div>
       <div className={styles.addedByFilters}>
         <label tabIndex={0} className={styles.label}>
-          <input className={styles.input} onChange={handleChangeAddedBy} value="all" type="radio" name="addedby" checked />
+          <input className={styles.input} onChange={handleChangeAddedBy} value="all" type="radio" name="addedby" />
           <span>Todos</span>
         </label>
         <label tabIndex={0} className={styles.label}>
