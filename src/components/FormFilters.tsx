@@ -39,21 +39,21 @@ const FormFilters = () => {
         <button type="reset" className={styles.button} onClick={handleResetByEffectFilter}>Borrar búsqueda</button>
       </div>
       <div className={styles.addedByFilters}>
-        <label className={styles.label}>
-          Todos
-          <input className={styles.input} onChange={handleChangeAddedBy} value="all" type="radio" name="addedby" />
+        <label tabIndex={0} className={styles.label}>
+          <input className={styles.input} onChange={handleChangeAddedBy} value="all" type="radio" name="addedby" checked />
+          <span>Todos</span>
         </label>
-        <label className={styles.label}>
-          Skyrim
+        <label tabIndex={0} className={styles.label}>
           <input className={styles.input} onChange={handleChangeAddedBy} value="Skyrim" type="radio" name="addedby" />
+          <span>Skyrim</span>
         </label>
-        <label className={styles.label}>
-          Dawnguard
+        <label tabIndex={0} className={styles.label}>
           <input className={styles.input} onChange={handleChangeAddedBy} value="Dawnguard" type="radio" name="addedby" />
+          <span>Dawnguard</span>
         </label>
-        <label className={styles.label}>
-          Dragonborn
+        <label tabIndex={0} className={styles.label}>
           <input className={styles.input} onChange={handleChangeAddedBy} value="Dragonborn" type="radio" name="addedby" />
+          <span>Dragonborn</span>
         </label>
       </div>
     </form>

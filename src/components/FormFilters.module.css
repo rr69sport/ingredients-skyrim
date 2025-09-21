@@ -43,29 +43,35 @@
 .label {
   flex: auto;
   display: block;
-  padding: calc(var(--gap) / 2) var(--gap);
 
-  border-radius: var(--border-radius);
-  background-color: var(--background-color-lighten);
-  text-align: center;
-
-  cursor: pointer;
-
-  &:hover {
-    background-color: var(--alt-background-color-lighten);
-  }
+  transition: transform var(--duration) var(--timing-function);
 
   &:active {
     transform: scale(.95);
   }
-
-  &.active {
-    background-color: red;
-  }
 }
 
-.input {
-  display: none;
+.input[type="radio"] {
+  position: absolute;
+  transform: scale(0);
+
+  & + span {
+    padding: calc(var(--gap) / 2) var(--gap);
+    background-color: var(--background-color-lighten);
+    border-radius: var(--border-radius);
+    text-align: center;
+
+    cursor: pointer;
+    display: block;
+
+    &:hover {
+      background-color: var(--alt-background-color-lighten);
+    }
+  }
+
+  &:checked + span {
+    background-color: var(--alt-background-color-lighten);
+  }
 }
 
 .button {
